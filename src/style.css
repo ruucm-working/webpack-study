@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Arita Sans";
+  src: url("AritaSans-Medium.eot");
+  src: url("AritaSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("AritaSans-Medium.woff2") format("woff2"),
+    url("AritaSans-Medium.woff") format("woff"),
+    url("AritaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hello {
+  color: red;
+  background: url("./icon.png");
+  font-family: "Arita Sans", sans-serif;
+}

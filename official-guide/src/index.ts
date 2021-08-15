@@ -1,5 +1,5 @@
-import _ from "lodash"
-import printMe from "./print.js"
+import * as _ from "lodash"
+import printMe from "./print"
 
 function component() {
   const element = document.createElement("div")

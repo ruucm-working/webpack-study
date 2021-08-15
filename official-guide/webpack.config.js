@@ -5,12 +5,24 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 module.exports = {
   mode: "development",
   entry: {
-    app: "./src/index.js",
-    print: "./src/print.js",
+    app: "./src/index.ts",
+    print: "./src/print.ts",
   },
   devtool: "inline-source-map",
   devServer: {
     contentBase: "./dist",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
     new CleanWebpackPlugin(),

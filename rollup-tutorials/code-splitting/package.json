@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "rollup": "^2.56.2",
+    "systemjs": "^6.10.3"
+  },
+  "scripts": {
+    "build": "rollup src/main.js -f cjs -d dist",
+    "build2": "rollup src/main.js src/main2.js -f cjs",
+    "build3": "rollup src/main.js src/main2.js -f es -d dist-es",
+    "build4": "rollup src/main.js src/main2.js -f system -d dist-system"
+  }
+}
